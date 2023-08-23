@@ -1,0 +1,83 @@
+
+  .sub-mains {
+    display: flex;
+    justify-content: center;
+    height: 350px;
+    width: 35%;
+    box-shadow: 11px 12px 13px 12px lightblue;
+    padding-top: 40px;
+    border-radius: 60px;
+    position: relative;
+    margin: auto;
+    background-color: rgb(54, 27, 202)
+  }
+  
+  input{
+      width: 300px;
+      height: 50px;
+      border-radius: 60px;
+      box-shadow: lightcyan;
+      border: none;
+      outline: none;
+      background-color: #fff;
+  }
+  
+  .emails{
+      height: 25px;
+      width: 25px;
+      position: absolute;
+      padding: 14px 0 0 25px;
+  }
+  
+  .names{
+      padding-left: 70px;
+      font-size: 20px;
+  }
+  .second-inputs{
+      padding-top: 20px;
+  }
+  
+  button{
+      width: 300px;
+      height: 50px;
+      border-radius: 60px;
+      background-color:rgb(161 227 249);
+      color: rgb(19, 19, 228);
+      font-size: 18px;
+      border: none;
+      font-family: 'Borel', cursive;
+      margin-top: 10px;
+  }
+  
+  .contact-button{
+   margin-top: 20px;
+  }
+  .headings{
+  font-family: 'Borel', cursive;
+  }
+  @media (max-width: 900px) {
+    
+    .sub-mains {
+      width: 180px; 
+    }
+    .contact-button{
+      width:30vw;
+    }
+    .names {
+      font-size: 16px;
+       width: 130px;
+       margin-left: 80px;
+    }
+  
+    
+  input{
+      height: 35px;
+      font-size: 14px; 
+    }
+  
+  
+  }
+
+   .headings{
+    color: white;
+   }

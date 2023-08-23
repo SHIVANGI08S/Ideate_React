@@ -1,0 +1,56 @@
+/* Base styles */
+.ideas-container {
+  padding-top: 30px;
+  background-size: cover;
+  text-align: center; 
+  font-family: 'Borel', cursive;
+  background-color: #f0f0f0; /* Set a background color */
+}
+
+.centered-title {
+  color: white;
+  margin-bottom: 20px;
+  font-family: 'Borel', cursive;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 20px; /* Add padding to the card container */
+}
+
+.custom-card {
+  width: 350px; 
+  transition: box-shadow 0.3s ease;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  background-color: #a5dced;
+}
+
+.custom-card:hover {
+  box-shadow: 0 4px 8px lightblue; 
+  transform: translateY(-4px);
+}
+
+.pro {
+  height: 200px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .card-container {
+    justify-content: center;
+    padding: 0 10px; /* Adjust padding for smaller screens */
+  }
+
+  .custom-card {
+    width: 45vw;
+  }
+  .modal{
+    width:95px;
+    padding: 0px;
+  }
+}
