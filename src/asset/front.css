@@ -1,0 +1,115 @@
+/* App.css */
+.custom-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #376085;
+  padding: 0 20px;
+}
+
+.sticky-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #5995cb; /* Background color when the navbar is sticky */
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  max-width: 50px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.ant-menu {
+  background: transparent;
+  border: none;
+}
+
+.ant-menu-item {
+  color: white;
+  transition: background-color 0.3s;
+  font-size: 18px;
+}
+
+.custome-card {
+  width: 240px;
+  margin-right: 20px; /* Adjust margin for spacing between cards */
+  margin-left: 20px; /* Adjust margin for spacing between cards */
+  margin-top: -130px;
+  background: rgba(0, 0, 0, 0.3);
+  border-color: darkblue;
+  width: 700px;
+}
+
+.custo-card {
+
+  margin-right: 20px; /* Adjust margin for spacing between cards */
+  margin-left: 20px; /* Adjust margin for spacing between cards */
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-color: darkblue;
+  background-repeat: "no-repeat";
+  background-size: "cover";
+}
+
+.custome-card:hover {
+  border-color: #1890ff;
+}
+
+.custo-card:hover {
+  border-color: #1890ff;
+}
+
+/* Add styling for the scrolling images */
+.scrolling-images {
+  display: flex;
+  align-items: center;
+  padding: 40px 60px;
+  gap: 90px;
+}
+
+.rounded-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.arrow-button {
+  font-size: 24px;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.3s ease-in-out;
+  top: 20%;
+  transform: translateY(-50%);
+}
+
+.arrow-button:hover {
+  color: #1890ff;
+}
+
+.menu-item:hover {
+  transform: translateY(-2px);
+}
+
+@media (max-width: 1100px) {
+
+  .custo-card .ant-card-meta-title,
+  .custome-card .ant-card-meta-title {
+    font-size: 12px;
+  }
+
+  .custo-card .ant-card-meta-description,
+  .custome-card .ant-card-meta-description {
+    font-size: 12px;
+  }
+
+
+}

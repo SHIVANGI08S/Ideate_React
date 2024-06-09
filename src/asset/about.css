@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 614 px;
+    height: 100vh;
   }
   
   .centered-content {
@@ -11,7 +11,6 @@
     color: white;
     width: 60%;
     max-width: 800px;
-    font-family: 'Borel', cursive;
     font-size: 18px;
     margin-top: 20px;
   }
@@ -20,7 +19,7 @@
     opacity: 0;
     transform: translateY(20px);
     animation: slideIn 1.5s ease forwards;
-    
+    line-height: 1.5;
   }
   
   @keyframes slideIn {
@@ -45,5 +44,16 @@
 
   .content-slide:nth-child(4) {
     animation-delay: 6s; /* Adjust delay time as needed */
+  }
+  @media (max-width: 800px) {
+    .con-body{
+      height: 100%;
+    }
+    .centered-content{
+      font-size: 13px;
+    }
+    p{
+      font-size: 10px;
+    }
   }
   

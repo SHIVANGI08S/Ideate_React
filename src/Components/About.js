@@ -6,7 +6,7 @@ export default function About() {
   return (
     <div className="con-body" style={{ backgroundImage:`url(${Backgrounds})`,backgroundRepeat:"no-repeat",backgroundSize:"cover" }}>
       <div className="centered-content">
-        <div className="content-slide">
+        <div className="content-slide" >
           <h1>About us</h1>
           <p>Welcome to <strong>Ideate</strong> - the ultimate platform for sharing, discovering, and investing in groundbreaking startup ideas. Our mission is to empower the visionary thinkers and aspiring entrepreneurs of the world by providing a dynamic and supportive space to nurture their concepts into reality.</p>
         </div>

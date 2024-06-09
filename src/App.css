@@ -1,10 +1,13 @@
+
+
 .main {
   text-align: center;
   justify-content: center;
   display: flex; 
   padding-top: 50px;
+  height: 100%;
   padding-bottom: 80px;
-  font-family: 'Borel', cursive;
+  font-family: 'Ubuntu', sans-serif;
 }
 .sub-main {
   display: flex;
@@ -14,7 +17,7 @@
   box-shadow: 11px 12px 13px 12px lightblue;
   padding-top: 40px;
   border-radius: 60px; 
-  margin-top: 14px;
+  margin-top: 13px;
   background-color: rgb(18, 18, 139)
 }
 
@@ -60,7 +63,7 @@ input{
     font-size: 20px;
 }
 .second-input{
-    padding-top: 20px;
+    padding-top: 15px;
 }
 
 button{
@@ -69,17 +72,13 @@ button{
     border-radius: 60px;
     background-color: lightblue;
     color: rgb(83, 83, 202);
-    font-size: 18px;
     border: none;
     font-family: 'Borel', cursive;
 }
-.login-button{
-    padding-top: 25px;
-    
-}
+
 @media (max-width: 1100px) {
   .sub-main {
-    width: 50%; 
+    width: 32vh; 
   }
 
   .name {
@@ -92,15 +91,17 @@ button{
   }
 
   input {
-    width: 80%;
+    width: 75%;
     height: 40px;
     font-size: 14px; 
   }
 
-  button {
+  .login-button {
     width: 40vw;
     height: 40px; 
-    font-size: 14px; 
+    display: inline-flex;
+    justify-content: center;
+    padding-top: 10px;
   }
 }
 .link{

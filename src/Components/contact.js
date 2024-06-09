@@ -3,22 +3,24 @@ import Background from "../asset/image/Background.jpg";
 import {useState} from 'react';
 import "../asset/contact.css";
 
+
+
 export default function Contact() {
     const[Name,setName]= useState("")
-  const[email, setEmail] = useState("")
+  const[number, setnum] = useState("")
 
   const handleClick = ()=>{
-    console.log(Name,email);
-    if(Name === "" && email ===""){
-      alert("Please enter your name and email")
+    console.log(Name,number);
+    if(Name === "" && number ===""){
+      alert("Please enter your name and contact no.")
     }
-    if(Name ==="" && email !==""){
+    if(Name ==="" && number !==""){
       alert(" Please Enter your name")
     }
-    if(Name !=="" && email ===""){
-      alert(" Please Enter your email")
+    if(Name !=="" && number ===""){
+      alert(" Please Enter your contact no.")
     }
-    if(Name !=="" && email !==""){
+    if(Name !=="" && number !==""){
       alert("Your request has been sent")
     }
 
@@ -26,9 +28,8 @@ export default function Contact() {
   return (
     <div className="mains" style={{ 
     backgroundImage:`url(${Background})`,
-    backgroundRepeat:"no-repeat",
-    backgroundSize:"cover",
-   height: "100%", display: "flex", alignItems: "center", justifyContent: "center" }} >
+    backgroundRepeat:"no-repeat"}} >
+      <p  className='contact-content'>For any queries Mail to: ideateindia@id.ac.in<br/><br/>In case you want to talk to our representatives over a phone call please fill the form and we will contact you as soon as possible</p>
     <div className="sub-mains">
 
       <div className='box'>
@@ -40,8 +41,8 @@ export default function Contact() {
             }/>
           </div>
           <div className="second-inputs">
-            <input type="email" placeholder="Email" className="names" value ={email} onChange={(event)=>
-            setEmail(event.target.value)
+            <input type="text" placeholder="Contact No" className="names" value ={number} onChange={(event)=>
+            setnum(event.target.value)
 
             }/>
           </div>

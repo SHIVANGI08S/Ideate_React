@@ -1,23 +1,22 @@
-/* Base styles */
 .ideas-container {
   padding-top: 30px;
   background-size: cover;
   text-align: center; 
-  font-family: 'Borel', cursive;
-  background-color: #f0f0f0; /* Set a background color */
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f0f0f0;
 }
 
 .centered-title {
   color: white;
   margin-bottom: 20px;
-  font-family: 'Borel', cursive;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .card-container {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 0 20px; /* Add padding to the card container */
+  padding: 0 20px; 
 }
 
 .custom-card {
@@ -40,10 +39,10 @@
 }
 
 /* Responsive styles */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .card-container {
     justify-content: center;
-    padding: 0 10px; /* Adjust padding for smaller screens */
+    padding: 0 10px; 
   }
 
   .custom-card {
