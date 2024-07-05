@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import ideaContext from "./ideascontext";
 
 const IdeaState = (props) => {
-  const host = "https://ideateit.onrender.com";
+  const host = "https://ideatebackend.onrender.com";
   const initialIdeas = [];
 
   const [ideas, setIdeas] = useState(initialIdeas);
